@@ -1,0 +1,59 @@
+<ion-content class="ion-padding">
+  <br><br>
+  <h1 class="ion-text-center logo-white">
+    Registrar
+  </h1>
+  <br><br>
+  <ion-list lines="none">
+      <ion-item>
+        <ion-label position="stacked">Nome</ion-label>
+        <ion-input type="text" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">CPF</ion-label>
+        <ion-input type="text" required></ion-input>
+      </ion-item>        
+      
+      <ion-item>
+        <ion-label position="stacked">Data de nascimento</ion-label>
+        <ion-datetime value="2020-01-01" displayFormat="D / MMM / YYYY"></ion-datetime>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Gênero</ion-label>
+        <ion-select placeholder="Selecione">
+          <ion-select-option value="f">Feminino</ion-select-option>
+          <ion-select-option value="m">Masculino</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Celular</ion-label>
+        <ion-input type="number" required></ion-input>
+      </ion-item>    
+
+      <ion-item>
+        <ion-label position="stacked">Email</ion-label>
+        <ion-input type="text" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Senha</ion-label>
+        <ion-input type="password" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Confirmar senha</ion-label>
+        <ion-input type="password" required></ion-input>
+      </ion-item>
+  </ion-list>
+  <br>
+  <ion-button ion-item color="dark" fill="outline" shape="round" expand="full" size="medium">
+    Cadastrar
+  </ion-button>
+  <br>
+  <ion-button ion-item color="dark" fill="clear" expand="full" routerLink="/login">
+    Cancelar
+  </ion-button>
+</ion-content>
